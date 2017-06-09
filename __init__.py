@@ -30,7 +30,6 @@ class SelectByName(bpy.types.Operator):
             obname = ''.join(ob.name.split("."))
             obname = ''.join([i for i in obname if not i.isdigit()])
             if name == obname:
-                print(obname)
                 ob.select = True
         
         return {'FINISHED'}
@@ -71,8 +70,4 @@ def unregister():
     addon_keymaps.clear()
 
 if __name__ == "__main__":
-    try:
-        unregister()
-    except:
-        pass
     register()
