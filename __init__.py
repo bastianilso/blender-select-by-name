@@ -36,7 +36,7 @@ class SelectByName(bpy.types.Operator):
 
 class SelectGroupedEnhancedMenu(bpy.types.Menu):
     bl_label = "Select Grouped (Enhanced)"
-    bl_idname = "view3d.mymenu"
+    bl_idname = "view3d.selectgroupedenhanced"
 
     def draw(self, context):
         layout = self.layout
@@ -59,7 +59,7 @@ def register():
     if kc:
         km = kc.keymaps.new(name='3D View', space_type='VIEW_3D')
         kmi = km.keymap_items.new('wm.call_menu', 'G', 'PRESS', shift = True)
-        kmi.properties.name = "view3d.mymenu"
+        kmi.properties.name = "view3d.selectgroupedenhanced"
 
 def unregister():
     bpy.utils.unregister_class(SelectGroupedEnhancedMenu)
