@@ -1,7 +1,7 @@
 # Select Objects by Name Plug-in for Blender
 A blender plug-in to select objects which share a similar name in the 3D view.
 
-![The Blender Select by Name option in the Grouped Select menu.](http://bastianilso.com/wp-content/uploads/2017/06/select_by_name.png)
+![The Blender Select by Name option in the Grouped Select menu.](http://bastianilso.com/wp-content/uploads/2018/03/select_by_name.png)
 
 The plug-in selects objects which have names, disregarding numbers and punctuation. For example using the plug-in while selecting an object called "Cube" would also select "Cube.001" "Cube.002" etc.
 
